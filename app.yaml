@@ -1,0 +1,12 @@
+application: my-app-id
+module: default
+version: 1
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /static
+  static_dir: default/v1/static
+
+- url: /.*
+  script: default/v1/index.php
